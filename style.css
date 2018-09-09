@@ -1,7 +1,25 @@
 body {
     font-family: 'Roboto', sans-serif;
+    /*display: grid;*/
+}
+
+.top-containter {
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "image image image image"
+        "image image image image"
+        "image header header image";
+}
+
+.top-image {
+    grid-area: image;
+    width: 50px;
 }
 
 header {
     background-color: gainsboro;
+    grid-area: header;
 }

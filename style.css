@@ -6,20 +6,24 @@ body {
 .top-containter {
     background-color: aquamarine;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /*grid-template-rows: 1fr 1fr 1fr;*/
+    /*grid-template-areas: 
         "image image image image"
-        "image image image image"
-        "image header header image";
+        "image header header image";*/
 }
 
 .top-image {
-    grid-area: image;
-    width: 50px;
+    position: relative;
+    /*width: 50px;*/
 }
 
-header {
+.top-image img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#header1 {
     background-color: gainsboro;
-    grid-area: header;
 }
